@@ -3,7 +3,7 @@ import { Form } from 'semantic-ui-react';
 
 const RenderQuiz = ({ questionObj, countMarks }) => {
   const { question, correct_answer, incorrect_answers } = questionObj;
-  const option = [...incorrect_answers, correct_answer];
+  const option = [...incorrect_answers, correct_answer].sort(() => Math.random() - 1);
   const [selected, setSelected] = useState('');
   const [disabled, setDisabled] = useState(false);
 
