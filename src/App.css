@@ -45,3 +45,7 @@ label {
   margin: 1rem;
   text-align: left;
 }
+
+.wrap-question {
+  display: inline-block;
+}
