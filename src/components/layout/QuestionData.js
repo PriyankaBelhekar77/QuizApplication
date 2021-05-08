@@ -11,7 +11,6 @@ const QuestionData = ({ questionList, setRestart }) => {
   }
 
   const handleClick = (e) => {
-    console.log('reset clecked');
     setRestart(true);
   }
 
@@ -20,7 +19,7 @@ const QuestionData = ({ questionList, setRestart }) => {
     if (queNumber < questionList.length) {
       timeout = setTimeout(() => {
         setQueNumber(queNumber + 1);
-      }, 2000);
+      }, 10000);
     }
     return () => clearTimeout(timeout);
   }, [queNumber]);
